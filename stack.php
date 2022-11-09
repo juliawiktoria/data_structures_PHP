@@ -4,16 +4,22 @@
 
 class Stack {
     // Properties
-    private $stack;
-    private $limit;
+    public $stack;
+    public $limit;
     public $size;
 
     // constructor
-    private function __construct($limit = 10, $initial = array()) {
-
+    function __construct($limit = 10, $empty_array = array()) {
+      $this->stack = $empty_array;
+      $this->limit = $limit;
     }
 
     // other methods
+
+    function print_stack() {
+      echo "The stack with limit $this->limit:\nBottom -> " . implode("--", $this->stack) . "\n";
+    }
+
     function push($name) {
       $this->name = $name;
     }
@@ -23,12 +29,14 @@ class Stack {
     }
 
     function get_size() {
-      return $this->$size;
+      return $this->size;
     }
 
     function get_space_left() {
-      return ($this->$limit - $this->$size);
+      return ($this->limit - $this->size);
     }
   }
 
+$my_stack = new Stack(10, [1,2,3,4]);
+$my_stack->print_stack();
 ?>
