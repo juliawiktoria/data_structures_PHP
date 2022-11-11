@@ -75,10 +75,9 @@ function postOrder($root) {
 }
 
 
-// fixing input to the exercise
 // $fp = fopen("php://stdin", "r");
 // $n = fgets($fp);
-// $numbers = array_map('intval', explode(',', str_replace(" ", "", fgets($fp))));
+// $numbers = array_map('intval', explode(' ', fgets($fp)));
 // fclose($fp);
 
 $numbers = [1, 2, 5, 3, 6, 4];
