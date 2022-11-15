@@ -1,5 +1,6 @@
 <?php
 
+// tree node supporting only 2 children per parent
 class TreeNode {
     public $value;
     public $left;

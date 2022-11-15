@@ -1,6 +1,7 @@
 <?php
 // https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem
 
+// node with a single link only
 class Node {
     public $value;
     public $next;
@@ -11,6 +12,7 @@ class Node {
     }
 }
 
+// singly linked list
 class LinkedList {
     public $head;
     public $tail;
